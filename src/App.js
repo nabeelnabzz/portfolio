@@ -8,11 +8,12 @@ import Certs from './components/Certs';
 import Footer from './components/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Projects from './components/Projects';
 
 
 function App() {
     useEffect(() => {
-      document.title = 'Damasukma Trihanandi';
+      document.title = 'Nabeel T';
       AOS.init();
     }, []);
   return (
@@ -20,8 +21,9 @@ function App() {
       <Navbar />
       <Hiro />
       <Skills />
+      <Projects />
       <Honors />
-      <Certs />
+      {/* <Certs /> */}
       <Footer />
     </div>
   );
